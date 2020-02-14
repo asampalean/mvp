@@ -8,7 +8,9 @@
         data-toggle="dropdown"
         aria-haspopup="true"
         aria-expanded="false"
-      >Languages</button>
+      >
+        Languages
+      </button>
       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
         <a class="dropdown-item" href="#">English</a>
         <a class="dropdown-item" href="#">Spanish</a>
@@ -20,8 +22,12 @@
     </div>
 
     <div class="btn-group">
-      <button type="button" class="btn btn-dark" @click="newClient = true">SIGN UP</button>
-      <button type="button" class="btn btn-dark" @click="newClient = false">SIGN IN</button>
+      <button type="button" class="btn btn-dark" @click="newClient = true">
+        SIGN UP
+      </button>
+      <button type="button" class="btn btn-dark" @click="newClient = false">
+        SIGN IN
+      </button>
 
       <signUp v-if="newClient" @createUser="addProject" />
       <signIn v-else @letUser="addProject" />
@@ -82,7 +88,9 @@
               aria-label="Search"
             />
 
-            <button class="btn btn-primary my-2 my-sm-0 mr-auto" type="submit">Search</button>
+            <button class="btn btn-primary my-2 my-sm-0 mr-auto" type="submit">
+              Search
+            </button>
           </form>
         </ul>
       </div>
@@ -98,6 +106,7 @@ import ShoppingCart from "./components/ShoppingCart";
 
 export default {
   name: "app",
+
   components: {
     SignIn,
     SignUp,
@@ -123,5 +132,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>
