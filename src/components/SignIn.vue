@@ -9,14 +9,18 @@
         aria-describedby="emailHelp"
         placeholder="Enter email"
       />
-      <small
-        id="emailHelp"
-        class="form-text text-muted"
-      >We'll never share your email with anyone else.</small>
+      <small id="emailHelp" class="form-text text-muted"
+        >We'll never share your email with anyone else.</small
+      >
     </div>
     <div class="form-group">
       <label for="inputPasswordIn">Password</label>
-      <input v-model="password" class="form-control" id="inputPasswordIn" placeholder="Password" />
+      <input
+        v-model="password"
+        class="form-control"
+        id="inputPasswordIn"
+        placeholder="Password"
+      />
     </div>
     <button @click="doSubmit" class="btn btn-primary">SIGN IN</button>
   </form>
@@ -36,10 +40,12 @@ export default {
 
   methods: {
     doSubmit() {
-      this.$emit("letUser", {
-        email: this.email,
-        password: this.password
-      });
+      // this.$emit("letUser", {
+      //   email: this.email,
+      //   password: this.password
+      // });
+      // redirect the user to homepage
+      this.$router.push("/");
     }
   }
 };
