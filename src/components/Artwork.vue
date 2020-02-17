@@ -1,9 +1,23 @@
 <template>
-  <div>ARTWORKS</div>
+  <div>
+    ARTWORKS
+    <div>
+      fashion
+      <div v-for="(item, i) in fashion" :key="i">
+        <img :src="item.image" width="100" />
+      </div>
+    </div>
+    <div>
+      graphics
+      <div v-for="(item, i) in graphics" :key="i">
+        <img :src="item.image" width="100" />
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
-import data from "./data";
+import data from "../data";
 export default {
   name: "Artwork",
   data() {
@@ -17,12 +31,14 @@ export default {
   methods: {
     showArtwork() {
       this.$router.push("/Artwork");
+    }
+  },
+  computed: {
+    fashion() {
+      return data.fashion;
     },
-    getData() {
-      data.fashion.map;
-      data.graphics.map;
-      data.nature.map;
-      data.collage.map;
+    graphics() {
+      return data.graphics;
     }
   }
 };
