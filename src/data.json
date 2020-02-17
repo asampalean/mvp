@@ -1,0 +1,403 @@
+{
+  "fashion": [
+    {
+      "image": "https://i.imgur.com/GVJ7D79.jpg?1",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/kFFU3MO.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/l2zFsYf.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/ECK470u.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/KtqbSy8.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/681Blsh.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/gTm5A1N.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/21Wqv8h.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/oC7u7N0.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/YnavORm.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/alWHjmg.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/PAiKrZQ.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/NQAiIpC.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/CHxnXfv.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/7sNNvrv.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/rUlnQT8.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/Nxq456n.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/Nxdly10.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/Z45ro1M.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/RqCR2EN.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/P5WnRCi.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/XmDJXzL.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/op4abTV.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/Nxq456n.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/Mh08SiM.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/WejFTrq.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/JgVdVzF.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    }
+  ],
+
+  "graphics": [
+    {
+      "image": "https://i.imgur.com/UvesEtb.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/IAnEMvK.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/d6oVKOd.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/MhwcrOF.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/TFeIoXu.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/zEgV58l.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/Gu7IUYo.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    }
+  ],
+
+  "nature": [
+    {
+      "image": "https://i.imgur.com/Q0BgZzZ.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/xwNAnux.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/t0T6e7X.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/mK8qMLH.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/jFxZIDD.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/d2UyFoM.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/0OJEMNn.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/5IuIBmy.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    }
+  ],
+
+  "collage": [
+    {
+      "image": "https://i.imgur.com/l5HOm4Y.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/29FUQB9.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/bk1OTKb.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/qHK3YTz.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/wEksv63.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/1OBhM2w.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/AtZ4ntR.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/KGzKBPG.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/ENfNUFs.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/JHQ6mnc.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/3zPvGtb.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/aZ33Rz8.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/PkvZ6yu.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/4Mn3beN.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/artcybw.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/xu22gFQ.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/94NGYsd.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/iWA2pgh.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/1qLedqr.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/qZgOQn4.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/1jerdV7.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/RHH4qEM.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    },
+    {
+      "image": "https://i.imgur.com/hnS1uxv.jpg",
+      "sizes": "13*18 21*30 30*40 40*50 50*50 50*70 70*100",
+      "frames": "https://www.ikea.com/es/en/cat/picture-photo-frames-18746/",
+      "price": "20 30 35 40 45 50 60"
+    }
+  ]
+}

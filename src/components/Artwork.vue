@@ -3,12 +3,27 @@
 </template>
 
 <script>
+import data from "./data";
 export default {
   name: "Artwork",
   data() {
     return {
-      allProjects: []
+      image: "",
+      sizes: "",
+      frames: "",
+      price: ""
     };
+  },
+  methods: {
+    showArtwork() {
+      this.$router.push("/Artwork");
+    },
+    getData() {
+      data.fashion.map;
+      data.graphics.map;
+      data.nature.map;
+      data.collage.map;
+    }
   }
 };
 </script>

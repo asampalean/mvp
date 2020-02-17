@@ -7,8 +7,14 @@ export default {
   name: "ShoppingCart",
   data() {
     return {
-      featured: null
+      items: "",
+      totalamount: ""
     };
+  },
+  methods: {
+    showShoppingCart() {
+      this.$router.push("/ShoppingCart");
+    }
   }
 };
 </script>
