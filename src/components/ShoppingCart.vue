@@ -10,7 +10,7 @@
         <h7>{{ item.price }}</h7>
       </p>
       <p>
-        <v-btn :cart="cart" :total="total" @emptyCart="emptyCart">DELETE</v-btn>
+        <v-btn @click="emptyCart(item)">DELETE</v-btn>
       </p>
     </div>
   </div>
@@ -26,8 +26,9 @@ export default {
     };
   },
   methods: {
-    emptyCart(index) {
-      this.cart.splice(index, 1);
+    emptyCart(e) {
+      console.log(e);
+      this.$emit("deleteCart", e);
     }
   }
 };
