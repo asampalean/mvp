@@ -1,103 +1,80 @@
 <template>
-  <div>
-    <div class="dropdown">
-      <button
-        class="btn btn-secondary dropdown-toggle"
-        type="button"
-        id="dropdownMenuButton"
-        data-toggle="dropdown"
-        aria-haspopup="true"
-        aria-expanded="false"
-      >Languages</button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#">English</a>
-      </div>
-    </div>
-    <div class="text-center">
-      <img src="../assets/aa logo.png" class="logo" />
-    </div>
+  <v-container>
+    <v-row justify="space-around">
+      <v-switch v-model="drawer" class="ma-2" label="v-model"></v-switch>
 
-    <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">
-        <img
-          src="../assets/aa logo.png"
-          width="30"
-          height="30"
-          class="d-inline-block align-top"
-          alt
-        />
-        AccessibleART
-      </a>
-      <button
-        class="navbar-nav"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown"
-        aria-expanded="false"
-        aria-label="Nav navigation"
-      ></button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdownMenuLink"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              <Artwork></Artwork>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Fashion</a>
-              <a class="dropdown-item" href="#">Graphics</a>
-              <a class="dropdown-item" href="#">Nature</a>
-              <a class="dropdown-item" href="#">Collage</a>
-            </div>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">
-              Favourites
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">
-              <ShoppingCart></ShoppingCart>
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-        </ul>
+      <v-switch v-model="miniVariant" class="ma-2" label="Mini variant"></v-switch>
 
-        <form class="form-inline my-2 my-lg-0">
-          <input
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-danger my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
-  </div>
+      <v-switch v-model="background" class="ma-2" label="Background"></v-switch>
+
+      <v-switch v-model="right" class="ma-2" label="Right"></v-switch>
+    </v-row>
+
+    <v-card height="400" class="overflow-hidden">
+      <v-navigation-drawer
+        v-model="drawer"
+        :search="search"
+        :mini-variant="miniVariant"
+        :right="right"
+        :src="bg"
+        absolute
+        light
+      >
+        <v-list dense nav class="py-0">
+          <v-list-item two-line :class="miniVariant && 'px-0'">
+            <v-list-item-avatar>
+              <img src="https://i.imgur.com/a9BI08n.png" />
+            </v-list-item-avatar>
+
+            <v-list-item-content>
+              <v-list-item-title>AccessibleART</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+
+          <v-divider></v-divider>
+
+          <v-list-item v-for="item in items" :key="item.title" link>
+            <v-list-item-icon>
+              <v-icon>{{ item.icon }}</v-icon>
+            </v-list-item-icon>
+
+            <v-list-item-content>
+              <v-list-item-title>
+                <router-link :to="item.link">{{ item.title }}</router-link>
+              </v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </v-list>
+      </v-navigation-drawer>
+    </v-card>
+  </v-container>
 </template>
 
 <script>
 export default {
-  name: "home",
   data() {
-    //here I am defining the data
     return {
-      newClient: true
+      drawer: true,
+      items: [
+        { title: "SIGN IN", icon: "mdi-view-dashboard", link: "/sign-in" },
+        { title: "SIGN UP", icon: "mdi-view-dashboard", link: "/sign-up" },
+        { title: "ARTWORK", icon: "mdi-image", link: "/artwork" },
+        {
+          title: "SHOPPING CART",
+          icon: "mdi-shopping_cart",
+          link: "/shopping-cart"
+        }
+      ],
+      search: "",
+      right: true,
+      miniVariant: false,
+      expandOnHover: false,
+      background: false
     };
   },
-  methods: {
-    handleClick() {
-      this.newClient = true;
+  computed: {
+    bg() {
+      return this.background ? "https://i.imgur.com/LZJRNzE.jpg" : undefined;
     }
   }
 };

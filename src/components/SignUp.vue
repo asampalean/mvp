@@ -1,29 +1,13 @@
 <template>
   <form>
-    <div class="form-group">
-      <label for="name">Name</label>
-      <input v-model="name" class="form-control" id="name" placeholder="Name" />
-    </div>
-    <div class="form-group">
-      <label for="email">Email address</label>
-      <input
-        v-model="email"
-        class="form-control"
-        id="email"
-        aria-describedby="emailHelp"
-        placeholder="Enter email"
-      />
-      <small
-        id="emailHelp"
-        class="form-text text-muted"
-      >We'll never share your email with anyone else.</small>
-    </div>
-    <div class="form-group">
-      <label for="inputPassword">Password</label>
-      <input v-model="password" class="form-control" id="inputPassword" placeholder="Password" />
+    <v-card class="mx-auto" max-width="500">
+      <div>SIGN IN</div>
+      <v-text-field v-model="name" label="Name" required></v-text-field>
+      <v-text-field v-model="email" label="E-mail" required></v-text-field>
+      <v-text-field v-model="password" label="Password" required></v-text-field>
 
-      <button @click="handleSubmit" class="btn btn-primary">SIGN UP</button>
-    </div>
+      <v-btn class="mr-4" @click="handleSubmit">SIGN UP</v-btn>
+    </v-card>
   </form>
 </template>
 
