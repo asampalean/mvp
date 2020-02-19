@@ -1,6 +1,13 @@
-# viktoria
+# Project title
 
-## Project setup
+AccessibleART
+
+## General info
+
+Artwork made accessible for people on budget.
+Possibility for collectors, galleries to buy the original pieces.
+
+### Project setup
 
 ```
 npm install
@@ -27,6 +34,11 @@ npm run lint
 ### Customize configuration
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Technologies
+
+Vue.js
+Vuetify
 
 ### UX/UI : User Flow, User Persona, Sitemap
 
