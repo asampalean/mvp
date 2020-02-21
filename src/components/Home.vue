@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="mx-auto mt-5">
     <v-row justify="space-around">
       <v-switch v-model="drawer" class="ma-2" label="v-model"></v-switch>
 
@@ -80,4 +80,5 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+</style>

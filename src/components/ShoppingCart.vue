@@ -3,15 +3,12 @@
     SHOPPING CART
     <div v-for="(item, i) in cart" :key="i">
       <img :src="item.image" width="200" />
-      <p>
-        <h7>{{ item.sizes }}</h7>
-      </p>
-      <p>
-        <h7>{{ item.price }}</h7>
-      </p>
-      <p>
-        <v-btn @click="emptyCart(item)">DELETE</v-btn>
-      </p>
+
+      <h6>{{ item.sizes }}</h6>
+
+      <h6>{{ item.price }}</h6>
+
+      <v-btn @click="emptyCart(item)">DELETE</v-btn>
     </div>
   </div>
 </template>

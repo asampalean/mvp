@@ -1,133 +1,139 @@
 <template>
-  <v-card class="d-inline-block mx-auto">
-    <v-container>
-      <div>
-        <v-row class="mb-6" no-gutters>
-          <v-col v-for="n in 1" :key="n">
-            <h6>Fashion</h6>
-            <div v-for="(item, i) in fashion" :key="i">
-              <img :src="item.image" width="200" />
-              <p>
-                <h7>{{ item.sizes }}</h7>
-              </p>
-              <p>
-                <h7>{{ item.price }}</h7>
-              </p>
-              <p>
-                <v-btn @click="updateCart(item)">ADD</v-btn>
-              </p>
-            </div>
-          </v-col>
+  <div>
+    <v-container class="mt-5" style="padding-top: 100px !important;">
+      <h6>Fashion</h6>
+      <v-row>
+        <v-col v-for="(item, i) in fashion" :key="i" md="3">
+          <div>
+            <img :src="item.image" width="200" />
 
-          <v-col cols="auto" class="text-center pl-0">
-            <v-row class="flex-column ma-0 fill-height" justify="center">
-              <v-col class="px-0">
-                <v-btn icon>
-                  <v-icon>mdi-heart</v-icon>
-                </v-btn>
-              </v-col>
-            </v-row>
-          </v-col>
-        </v-row>
-      </div>
-      <div>
-        <v-row justify="space-between">
-          <v-col v-for="n in 1" :key="n">
-            Graphics
-            <div v-for="(item, i) in graphics" :key="i">
-              <img :src="item.image" width="200" />
-              <p>
-                <h7>{{ item.sizes }}</h7>
-              </p>
-              <p>
-                <h7>{{ item.price }}</h7>
-              </p>
-              <p>
-                <v-btn @click="updateCart(item)">ADD</v-btn>
-              </p>
-            </div>
-          </v-col>
+            <div class="text-center">
+              <v-dialog width="500">
+                <template v-slot:activator="{ on }">
+                  <v-btn color="red lighten-2" dark v-on="on">Click Me</v-btn>
+                </template>
 
-          <v-col cols="auto" class="text-center pl-0">
-            <v-row class="flex-column ma-0 fill-height" justify="center">
-              <v-col class="px-0">
-                <v-btn icon>
-                  <v-icon>mdi-heart</v-icon>
-                </v-btn>
-              </v-col>
-            </v-row>
-          </v-col>
-        </v-row>
-      </div>
-      <div>
-        <v-row justify="space-between">
-          <v-col v-for="n in 1" :key="n">
-            Nature
-            <div v-for="(item, i) in nature" :key="i">
-              <img :src="item.image" width="200" />
-              <p>
-                <h7>{{ item.sizes }}</h7>
-              </p>
-              <p>
-                <h7>{{ item.price }}</h7>
-              </p>
-              <p>
-                <v-btn @click="updateCart(item)">ADD</v-btn>
-              </p>
-            </div>
-          </v-col>
+                <v-card>
+                  <v-card-text>
+                    <img :src="item.image" width="400" />
+                    <h6>{{ item.sizes }}</h6>
 
-          <v-col cols="auto" class="text-center pl-0">
-            <v-row class="flex-column ma-0 fill-height" justify="center">
-              <v-col class="px-0">
-                <v-btn icon>
-                  <v-icon>mdi-heart</v-icon>
-                </v-btn>
-              </v-col>
-            </v-row>
-          </v-col>
-        </v-row>
-      </div>
-      <div>
-        <v-row justify="space-between">
-          <v-col v-for="n in 1" :key="n">
-            Collage
-            <div v-for="(item, i) in collage" :key="i">
-              <img :src="item.image" width="200" />
-              <p>
-                <h7>{{ item.sizes }}</h7>
-              </p>
-              <p>
-                <h7>{{ item.price }}</h7>
-              </p>
-              <p>
-                <v-btn @click="updateCart(item)">ADD</v-btn>
-              </p>
-            </div>
-          </v-col>
+                    <h6>{{ item.price }}</h6>
 
-          <v-col cols="auto" class="text-center pl-0">
-            <v-row class="flex-column ma-0 fill-height" justify="center">
-              <v-col class="px-0">
-                <v-btn icon>
-                  <v-icon>mdi-heart</v-icon>
-                </v-btn>
-              </v-col>
-            </v-row>
-          </v-col>
-        </v-row>
-      </div>
+                    <v-btn @click="addToCart(item)">ADD</v-btn>
+                  </v-card-text>
+
+                  <v-divider></v-divider>
+                </v-card>
+              </v-dialog>
+            </div>
+          </div>
+        </v-col>
+      </v-row>
+
+      <h6>Graphics</h6>
+      <v-row>
+        <v-col v-for="(item, i) in graphics" :key="i" md="3">
+          <div>
+            <img :src="item.image" width="200" />
+
+            <div class="text-center">
+              <v-dialog width="500">
+                <template v-slot:activator="{ on }">
+                  <v-btn color="red lighten-2" dark v-on="on">Click Me</v-btn>
+                </template>
+
+                <v-card>
+                  <v-card-text>
+                    <img :src="item.image" width="400" />
+                    <h6>{{ item.sizes }}</h6>
+
+                    <h6>{{ item.price }}</h6>
+
+                    <v-btn @click="addToCart(item)">ADD</v-btn>
+                  </v-card-text>
+
+                  <v-divider></v-divider>
+                </v-card>
+              </v-dialog>
+            </div>
+          </div>
+        </v-col>
+      </v-row>
+
+      <h6>Nature</h6>
+      <v-row>
+        <v-col v-for="(item, i) in nature" :key="i" md="3">
+          <div>
+            <img :src="item.image" width="200" />
+
+            <div class="text-center">
+              <v-dialog width="500">
+                <template v-slot:activator="{ on }">
+                  <v-btn color="red lighten-2" dark v-on="on">Click Me</v-btn>
+                </template>
+
+                <v-card>
+                  <v-card-text>
+                    <img :src="item.image" width="400" />
+                    <h6>{{ item.sizes }}</h6>
+
+                    <h6>{{ item.price }}</h6>
+
+                    <v-btn @click="addToCart(item)">ADD</v-btn>
+                  </v-card-text>
+
+                  <v-divider></v-divider>
+                </v-card>
+              </v-dialog>
+            </div>
+          </div>
+        </v-col>
+      </v-row>
+
+      <h6>Collage</h6>
+      <v-row>
+        <v-col v-for="(item, i) in collage" :key="i" md="3">
+          <div>
+            <div class="text-center">
+              <v-dialog width="500">
+                <template v-slot:activator="{ on }">
+                  <v-btn v-on="on">
+                    <img :src="item.image" width="200" />
+                  </v-btn>
+                </template>
+
+                <v-card>
+                  <v-card-text>
+                    <img :src="item.image" width="400" />
+                    <h6>{{ item.sizes }}</h6>
+
+                    <h6>{{ item.price }}</h6>
+
+                    <v-btn @click="addToCart(item)">ADD</v-btn>
+                  </v-card-text>
+
+                  <v-divider></v-divider>
+                </v-card>
+              </v-dialog>
+            </div>
+          </div>
+        </v-col>
+      </v-row>
     </v-container>
-  </v-card>
+  </div>
 </template>
 
 <script>
 import data from "../data";
+// import FashionCard from "./components/FashionCard";
 export default {
   name: "Artwork",
+  props: ["product"],
   data() {
     return {
-      total: 0
+      // cart: []
+      quantity: 1
     };
   },
 
@@ -135,10 +141,8 @@ export default {
     showArtwork() {
       this.$router.push("/Artwork");
     },
-    updateCart(e) {
-      //this.cart.push(e);
-      //this.total = this.shoppingCartTotal;
-      this.$emit("addToCart", e);
+    addToCart(item, quantity) {
+      this.$emit("updateCart", { ...item, quantity });
     }
   },
 
