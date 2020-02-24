@@ -20,7 +20,11 @@
 
                     <h6>{{ item.price }}</h6>
 
-                    <!-- <v-btn @click="addToCart(item)">ADD</v-btn> -->
+                    <v-btn @click="addToCart(item)">ADD</v-btn>
+
+                    <v-btn @click="increment()">+</v-btn>
+                    <span>{{quantity}}</span>
+                    <v-btn @click="decrease()" :disabled="quantity === 0">-</v-btn>
                   </v-card-text>
 
                   <v-divider></v-divider>
@@ -50,15 +54,23 @@ export default {
     graphics() {
       return data.graphics;
     }
+  },
+  methods: {
+    addToCart(item) {
+      this.$emit("updateCart", { ...item, quantity: this.quantity });
+    },
+    increment() {
+      this.quantity += 1;
+    },
+    decrease() {
+      if (this.quantity > 0) {
+        this.quantity -= 1;
+      }
+    },
+    resetCount() {
+      this.quantity = 0;
+    }
   }
-  //   methods: {
-  //     increment() {
-  //       this.quantity += 1;
-  //     },
-  //     decrease() {
-  //       this.quantity - 1;
-  //     }
-  //   }
 };
 </script>
 

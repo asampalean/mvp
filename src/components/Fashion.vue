@@ -24,7 +24,7 @@
 
                     <v-btn @click="increment()">+</v-btn>
                     <span>{{quantity}}</span>
-                    <v-btn @click="decrease()">-</v-btn>
+                    <v-btn @click="decrease()" :disabled="quantity === 0">-</v-btn>
                   </v-card-text>
 
                   <v-divider></v-divider>
@@ -44,6 +44,7 @@ import data from "../data";
 
 export default {
   name: "Fashion",
+
   data() {
     return {
       quantity: 0,
@@ -60,12 +61,13 @@ export default {
     addToCart(item) {
       this.$emit("updateCart", { ...item, quantity: this.quantity });
     },
-
     increment() {
       this.quantity += 1;
     },
     decrease() {
-      this.quantity -= 1;
+      if (this.quantity > 0) {
+        this.quantity -= 1;
+      }
     }
   }
 };

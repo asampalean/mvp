@@ -7,6 +7,8 @@ import Artwork from "../components/Artwork.vue";
 import ShoppingCart from "../components/ShoppingCart.vue";
 import Fashion from "../components/Fashion.vue";
 import Graphics from "../components/Graphics.vue";
+import Nature from "../components/Nature.vue";
+import Collage from "../components/Collage.vue";
 
 Vue.use(VueRouter);
 
@@ -68,6 +70,14 @@ const routes = [
       {
         path: "graphics",
         component: Graphics
+      },
+      {
+        path: "nature",
+        component: Nature
+      },
+      {
+        path: "collage",
+        component: Collage
       }
     ]
   }
