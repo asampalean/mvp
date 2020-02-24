@@ -65,7 +65,7 @@ export default {
 
     deleteCart(item) {
       let index = this.cart.indexOf(item);
-      this.cart.splice(index);
+      this.cart.splice(index, 1);
     }
   }
 };

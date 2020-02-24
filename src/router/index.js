@@ -6,6 +6,7 @@ import SignIn from "../components/SignIn.vue";
 import Artwork from "../components/Artwork.vue";
 import ShoppingCart from "../components/ShoppingCart.vue";
 import Fashion from "../components/Fashion.vue";
+import Graphics from "../components/Graphics.vue";
 
 Vue.use(VueRouter);
 
@@ -25,27 +26,27 @@ const routes = [
     name: "signin",
     component: SignIn
   },
-  {
-    path: "/artwork",
-    name: "artwork",
-    component: Artwork
-  },
+  // {
+  //   path: "/artwork",
+  //   name: "artwork",
+  //   component: Artwork
+  // },
   {
     path: "/shopping-cart",
     name: "shoppingcart",
     component: ShoppingCart
   },
 
-  {
-    path: "/artwork/fashion",
-    name: "fashion",
-    component: Fashion
-  }
+  // {
+  //   path: "/artwork/fashion",
+  //   name: "fashion",
+  //   component: Fashion
+  // },
   // {
   //   path: "/artwork/graphics",
   //   name: "graphics",
   //   component: Graphics
-  // }
+  // },
   // {
   //   path: "/artwork/nature",
   //   name: "nature",
@@ -56,20 +57,20 @@ const routes = [
   //   name: "collage",
   //   component: Collage
   // }
-  // {
-  //   path: "/artwork",
-  //   component: Artwork,
-  //   children: [
-  //     {
-  //       path: "fashion",
-  //       component: Fashion
-  //     },
-  //     {
-  //       path: "graphics",
-  //       component: Graphics
-  //     }
-  //   ]
-  // }
+  {
+    path: "/artwork",
+    component: Artwork,
+    children: [
+      {
+        path: "fashion",
+        component: Fashion
+      },
+      {
+        path: "graphics",
+        component: Graphics
+      }
+    ]
+  }
 ];
 
 const router = new VueRouter({

@@ -1,6 +1,6 @@
 <template>
   <div class="mt-5" style="padding-top: 100px !important;">
-    <h1>Category {{ $route.params.id }}</h1>
+    <h1>Category</h1>
     <nav>
       <v-btn>
         <router-link to="/artwork/fashion">Fashion</router-link>
@@ -15,6 +15,7 @@
         <router-link to="/artwork/collage">Collage</router-link>
       </v-btn>
     </nav>
+    <router-view @updateCart="updateCart"></router-view>
   </div>
 </template>
 
@@ -37,6 +38,9 @@ export default {
   methods: {
     showArtwork() {
       this.$router.push("/Artwork");
+    },
+    updateCart(item) {
+      this.$emit("updateCart", item);
     }
   }
 
