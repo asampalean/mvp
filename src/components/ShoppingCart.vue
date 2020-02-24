@@ -17,7 +17,7 @@
           </v-card>
         </v-col>
       </v-row>
-      <v-btn class="yellow" style="margin-left:472px ">Confirm your order</v-btn>
+      <v-btn @click="handleOrder()" class="yellow" style="margin-left:472px ">Confirm your order</v-btn>
     </v-container>
   </div>
 </template>
@@ -35,6 +35,9 @@ export default {
     emptyCart(e) {
       console.log(e);
       this.$emit("deleteCart", e);
+    },
+    handleOrder() {
+      this.$router.push("/confirmation");
     }
   }
 };

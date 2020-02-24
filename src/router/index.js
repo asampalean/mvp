@@ -9,6 +9,7 @@ import Fashion from "../components/Fashion.vue";
 import Graphics from "../components/Graphics.vue";
 import Nature from "../components/Nature.vue";
 import Collage from "../components/Collage.vue";
+import Confirmation from "../components/Confirmation.vue";
 
 Vue.use(VueRouter);
 
@@ -38,7 +39,11 @@ const routes = [
     name: "shoppingcart",
     component: ShoppingCart
   },
-
+  {
+    path: "/confirmation",
+    name: "confirmation",
+    component: Confirmation
+  },
   // {
   //   path: "/artwork/fashion",
   //   name: "fashion",
@@ -76,7 +81,7 @@ const routes = [
         component: Nature
       },
       {
-        path: "collage",
+        path: "/collage",
         component: Collage
       }
     ]

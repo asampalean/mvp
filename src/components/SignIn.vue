@@ -10,7 +10,7 @@
               <v-text-field type="password" label="Password" />
             </v-form>
             <v-card-actions>
-              <v-btn color="info" class="mx-auto">Sign in</v-btn>
+              <v-btn color="info" class="mx-auto" @click="handleSubmit">Sign in</v-btn>
             </v-card-actions>
           </v-card-text>
         </v-card-title>
@@ -31,7 +31,7 @@ export default {
   },
 
   methods: {
-    doSubmit() {
+    handleSubmit() {
       // this.$emit("letUser", {
       //   email: this.email,
       //   password: this.password
