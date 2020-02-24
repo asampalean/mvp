@@ -33,7 +33,7 @@
       <v-btn text rounded>
         <router-link to="/shopping-cart">
           <span>
-            <a>Cart({{cart.length}})</a>
+            <a>Cart({{cartLength}})</a>
           </span>
         </router-link>
       </v-btn>
@@ -48,6 +48,15 @@ export default {
     return {
       cart: []
     };
+  },
+  computed: {
+    cartLength() {
+      let quantity = 0;
+      this.cart.forEach(item => {
+        quantity += item.quantity;
+      });
+      return quantity;
+    }
   },
   methods: {
     updateCart(e) {

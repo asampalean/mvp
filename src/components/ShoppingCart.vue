@@ -8,7 +8,7 @@
 
       <h6>{{ item.price }}</h6>
 
-      <v-btn @click="emptyCart(item)">DELETE</v-btn>
+      <v-btn @click="emptyCart(item)">X</v-btn>
     </div>
   </div>
 </template>
