@@ -1,7 +1,6 @@
 <template>
-  <div>
+  <div style="background-color:#ddcbc2;">
     <v-container class="mt-5" style="padding-top: 100px !important;">
-      <h6>Graphics</h6>
       <v-row>
         <v-col v-for="(item, i) in graphics" :key="i" md="3">
           <div>
@@ -16,11 +15,14 @@
                 <v-card>
                   <v-card-text>
                     <img :src="item.image" width="400" />
-                    <h6>{{ item.sizes }}</h6>
+                    <h6 style="font-family:'Roboto Mono';">{{ item.sizes }}</h6>
 
-                    <h6>{{ item.price }}</h6>
+                    <h6 style="font-family:'Roboto Mono';">{{ item.price }}</h6>
 
-                    <v-btn @click="addToCart(item)">ADD</v-btn>
+                    <v-btn
+                      @click="addToCart(item)"
+                      style="font-family:'Roboto Mono';margin-right:30px; float:right;"
+                    >ADD</v-btn>
 
                     <v-btn @click="increment()">+</v-btn>
                     <span>{{quantity}}</span>
@@ -57,8 +59,11 @@ export default {
   },
   methods: {
     addToCart(item) {
-      this.$emit("updateCart", { ...item, quantity: this.quantity });
+      if (this.quantity > 0) {
+        this.$emit("updateCart", { ...item, quantity: this.quantity });
+      }
     },
+
     increment() {
       this.quantity += 1;
     },

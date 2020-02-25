@@ -1,84 +1,43 @@
 <template>
-  <v-container class="mx-auto mt-5">
-    <v-row justify="space-around">
-      <v-switch v-model="drawer" class="ma-2" label="v-model"></v-switch>
-
-      <v-switch v-model="miniVariant" class="ma-2" label="Mini variant"></v-switch>
-
-      <v-switch v-model="background" class="ma-2" label="Background"></v-switch>
-
-      <v-switch v-model="right" class="ma-2" label="Right"></v-switch>
-    </v-row>
-
-    <v-card height="400" class="overflow-hidden">
-      <v-navigation-drawer
-        v-model="drawer"
-        :search="search"
-        :mini-variant="miniVariant"
-        :right="right"
-        :src="bg"
-        absolute
-        light
-      >
-        <v-list dense nav class="py-0">
-          <v-list-item two-line :class="miniVariant && 'px-0'">
-            <v-list-item-avatar>
-              <img src="https://i.imgur.com/a9BI08n.png" />
-            </v-list-item-avatar>
-
-            <v-list-item-content>
-              <v-list-item-title>AccessibleART</v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-
-          <v-divider></v-divider>
-
-          <v-list-item v-for="item in items" :key="item.title" link>
-            <v-list-item-icon>
-              <v-icon>{{ item.icon }}</v-icon>
-            </v-list-item-icon>
-
-            <v-list-item-content>
-              <v-list-item-title>
-                <router-link :to="item.link">{{ item.title }}</router-link>
-              </v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-        </v-list>
-      </v-navigation-drawer>
-    </v-card>
-  </v-container>
+  <div>
+    <section class="hero">
+      <div>
+        <h1>Welcome to AccessibleArt!</h1>
+        <p>Affordable, museum-quality prints for your home.</p>
+        <router-link to="/artwork">
+          <v-btn style="margin-top:30px">Browse</v-btn>
+        </router-link>
+      </div>
+    </section>
+  </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      drawer: true,
-      items: [
-        { title: "SIGN IN", icon: "mdi-view-dashboard", link: "/sign-in" },
-        { title: "SIGN UP", icon: "mdi-view-dashboard", link: "/sign-up" },
-        { title: "ARTWORK", icon: "mdi-image", link: "/artwork" },
-        {
-          title: "SHOPPING CART",
-          icon: "mdi-shopping_cart",
-          link: "/shopping-cart"
-        }
-      ],
-      search: "",
-      right: true,
-      miniVariant: false,
-      expandOnHover: false,
-      background: false
-    };
-  },
-  computed: {
-    bg() {
-      return this.background ? "https://i.imgur.com/LZJRNzE.jpg" : undefined;
-    }
+  name: "Home",
+
+  handleBrowse() {
+    this.$router.push("/artwork");
   }
 };
 </script>
 
-<style>
+
+<style scoped>
+.hero {
+  background-position: static;
+  background-size: cover;
+  background-image: url(https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=patrick-perkins-3wylDrjxH-E-unsplash.jpg);
+  height: 1000px;
+}
+.hero div {
+  max-width: 540px;
+  margin-left: 310px;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  padding-top: 180px;
+  font-family: "Roboto Mono";
+}
 </style>

@@ -66,6 +66,7 @@ const routes = [
   // }
   {
     path: "/artwork",
+    name: "artwork",
     component: Artwork,
     children: [
       {
@@ -81,7 +82,7 @@ const routes = [
         component: Nature
       },
       {
-        path: "/collage",
+        path: "collage",
         component: Collage
       }
     ]

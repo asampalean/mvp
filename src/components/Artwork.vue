@@ -1,18 +1,26 @@
 <template>
-  <div class="mt-5" style="padding-top: 100px !important;">
-    <h1>Category</h1>
-    <nav>
+  <div class="mt-5" style="padding-top: 100px !important; text-align:center;">
+    <h1 style="font-family:'Roboto Mono'; margin-bottom:100px;">Category</h1>
+    <nav style="text-align:center">
       <v-btn>
-        <router-link to="/artwork/fashion">Fashion</router-link>
+        <router-link to="/artwork/fashion">
+          <p>Fashion</p>
+        </router-link>
       </v-btn>
       <v-btn>
-        <router-link to="/artwork/graphics">Graphics</router-link>
+        <router-link to="/artwork/graphics">
+          <p>Graphics</p>
+        </router-link>
       </v-btn>
       <v-btn>
-        <router-link to="/artwork/nature">Nature</router-link>
+        <router-link to="/artwork/nature">
+          <p>Nature</p>
+        </router-link>
       </v-btn>
       <v-btn>
-        <router-link to="/artwork/collage">Collage</router-link>
+        <router-link to="/artwork/collage">
+          <p>Collage</p>
+        </router-link>
       </v-btn>
     </nav>
     <router-view @updateCart="updateCart"></router-view>
@@ -80,6 +88,23 @@ export default {
 }
 
 .v-btn {
-  margin-right: 10px;
+  display: inline block;
+  border-radius: 50px;
+  font-size: 20px;
+  line-height: 100px;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.v-btn:hover {
+  color: #4f9777;
+  text-decoration: none;
+  background: #333;
+}
+.v-btn p {
+  color: #333333;
+  padding-top: 10px;
+  font-size: 16px!;
 }
 </style>

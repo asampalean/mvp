@@ -1,36 +1,36 @@
 <template>
   <v-app>
-    <v-app-bar app color="orange" dark>
+    <v-app-bar app color="none" style="postion:static;" dark>
       <v-spacer></v-spacer>
-      <v-btn text rounded>
+      <v-btn text rounded style="font-family:'Roboto Mono';">
         <router-link to="/">
           <span>
             <a>Home</a>
           </span>
         </router-link>
       </v-btn>
-      <v-btn text rounded>
+      <v-btn text rounded style="font-family:'Roboto Mono';">
         <router-link to="/sign-up">
           <span>
             <a>Sign up</a>
           </span>
         </router-link>
       </v-btn>
-      <v-btn text rounded>
+      <v-btn text rounded style="font-family:'Roboto Mono';">
         <router-link to="/sign-in">
           <span>
             <a>Sign in</a>
           </span>
         </router-link>
       </v-btn>
-      <v-btn text rounded>
+      <v-btn text rounded style="font-family:'Roboto Mono';">
         <router-link to="/artwork">
           <span>
             <a>Artwork</a>
           </span>
         </router-link>
       </v-btn>
-      <v-btn text rounded>
+      <v-btn text rounded style="font-family:'Roboto Mono';">
         <router-link to="/shopping-cart">
           <span>
             <a>Cart({{cartLength}})</a>

@@ -1,12 +1,11 @@
 <template>
-  <div>
+  <div style="background-color:#ddcbc2;">
     <v-container class="mt-5" style="padding-top: 100px !important;">
-      <h6>Collage</h6>
       <v-row>
         <v-col v-for="(item, i) in collage" :key="i" md="3">
           <div>
             <div class="text-center">
-              <v-dialog width="500">
+              <v-dialog width="500" height="700">
                 <template v-slot:activator="{ on }">
                   <div dark v-on="on">
                     <img :src="item.image" width="200" />
@@ -15,12 +14,15 @@
 
                 <v-card>
                   <v-card-text>
-                    <img :src="item.image" width="400" />
-                    <h6>{{ item.sizes }}</h6>
+                    <img :src="item.image" width="300" />
+                    <h6 style="font-family:'Roboto Mono';">{{ item.sizes }}</h6>
 
-                    <h6>{{ item.price }}</h6>
+                    <h6 style="font-family:'Roboto Mono';">{{ item.price }}</h6>
 
-                    <v-btn @click="addToCart(item)">ADD</v-btn>
+                    <v-btn
+                      @click="addToCart(item)"
+                      style="font-family:'Roboto Mono';margin-right:30px; float:right;"
+                    >ADD</v-btn>
 
                     <v-btn @click="increment()">+</v-btn>
                     <span>{{quantity}}</span>
@@ -47,7 +49,8 @@ export default {
   data() {
     return {
       quantity: 0,
-      artworks: []
+      artworks: [],
+      total: 0
     };
   },
 
@@ -58,7 +61,9 @@ export default {
   },
   methods: {
     addToCart(item) {
-      this.$emit("updateCart", { ...item, quantity: this.quantity });
+      if (this.quantity > 0) {
+        this.$emit("updateCart", { ...item, quantity: this.quantity });
+      }
     },
 
     increment() {
@@ -68,6 +73,10 @@ export default {
       if (this.quantity > 0) {
         this.quantity -= 1;
       }
+    },
+
+    getTotal() {
+      this.$emit("updateTotal");
     }
   }
 };
