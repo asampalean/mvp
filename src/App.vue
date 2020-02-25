@@ -2,6 +2,7 @@
   <v-app>
     <v-app-bar app color="none" style="postion:static;" dark>
       <v-spacer></v-spacer>
+
       <v-btn text rounded style="font-family:'Roboto Mono';">
         <router-link to="/">
           <span>
@@ -9,6 +10,7 @@
           </span>
         </router-link>
       </v-btn>
+
       <v-btn text rounded style="font-family:'Roboto Mono';">
         <router-link to="/sign-up">
           <span>
@@ -16,6 +18,7 @@
           </span>
         </router-link>
       </v-btn>
+
       <v-btn text rounded style="font-family:'Roboto Mono';">
         <router-link to="/sign-in">
           <span>
@@ -23,6 +26,7 @@
           </span>
         </router-link>
       </v-btn>
+
       <v-btn text rounded style="font-family:'Roboto Mono';">
         <router-link to="/artwork">
           <span>
@@ -30,16 +34,29 @@
           </span>
         </router-link>
       </v-btn>
+
+      <v-btn text rounded style="font-family:'Roboto Mono';">
+        <router-link to="/contact">
+          <span>
+            <a>Contact</a>
+          </span>
+        </router-link>
+      </v-btn>
+
       <v-btn text rounded style="font-family:'Roboto Mono';">
         <router-link to="/shopping-cart">
           <span>
-            <a>Cart({{cartLength}})</a>
+            <a>Cart({{ cartLength }})</a>
           </span>
         </router-link>
       </v-btn>
     </v-app-bar>
 
-    <router-view :cart="cart" @updateCart="updateCart" @deleteCart="deleteCart" />
+    <router-view
+      :cart="cart"
+      @updateCart="updateCart"
+      @deleteCart="deleteCart"
+    />
   </v-app>
 </template>
 <script>

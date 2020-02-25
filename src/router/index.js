@@ -10,6 +10,7 @@ import Graphics from "../components/Graphics.vue";
 import Nature from "../components/Nature.vue";
 import Collage from "../components/Collage.vue";
 import Confirmation from "../components/Confirmation.vue";
+import Contact from "../components/Contact.vue";
 
 Vue.use(VueRouter);
 
@@ -29,11 +30,12 @@ const routes = [
     name: "signin",
     component: SignIn
   },
-  // {
-  //   path: "/artwork",
-  //   name: "artwork",
-  //   component: Artwork
-  // },
+  {
+    path: "/contact",
+    name: "contact",
+    component: Contact
+  },
+
   {
     path: "/shopping-cart",
     name: "shoppingcart",
@@ -44,26 +46,7 @@ const routes = [
     name: "confirmation",
     component: Confirmation
   },
-  // {
-  //   path: "/artwork/fashion",
-  //   name: "fashion",
-  //   component: Fashion
-  // },
-  // {
-  //   path: "/artwork/graphics",
-  //   name: "graphics",
-  //   component: Graphics
-  // },
-  // {
-  //   path: "/artwork/nature",
-  //   name: "nature",
-  //   component: Nature
-  // },
-  // {
-  //   path: "/artwork/collage",
-  //   name: "collage",
-  //   component: Collage
-  // }
+
   {
     path: "/artwork",
     name: "artwork",

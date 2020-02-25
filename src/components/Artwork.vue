@@ -1,7 +1,11 @@
 <template>
-  <div class="mt-5" style="padding-top: 100px !important; text-align:center;">
+  <div
+    id="intro"
+    class="mt-5"
+    style="padding-top: 100px !important; text-align:center;background-color:#ddcbc2; "
+  >
     <h1 style="font-family:'Roboto Mono'; margin-bottom:100px;">Category</h1>
-    <nav style="text-align:center">
+    <nav style="text-align:center;    padding-bottom: 20px;">
       <v-btn>
         <router-link to="/artwork/fashion">
           <p>Fashion</p>
@@ -23,6 +27,7 @@
         </router-link>
       </v-btn>
     </nav>
+
     <router-view @updateCart="updateCart"></router-view>
   </div>
 </template>
@@ -95,6 +100,7 @@ export default {
   text-align: center;
   text-decoration: none;
   margin-right: 20px;
+  padding-bottom: 40px;
 }
 
 .v-btn:hover {

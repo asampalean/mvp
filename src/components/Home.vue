@@ -2,7 +2,10 @@
   <div>
     <section class="hero">
       <div>
-        <h1>Welcome to AccessibleArt!</h1>
+        <h1 style="animated infinite bounce delay-2s">
+          Welcome to AccessibleArt!
+        </h1>
+
         <p>Affordable, museum-quality prints for your home.</p>
         <router-link to="/artwork">
           <v-btn style="margin-top:30px">Browse</v-btn>
@@ -21,7 +24,6 @@ export default {
   }
 };
 </script>
-
 
 <style scoped>
 .hero {
